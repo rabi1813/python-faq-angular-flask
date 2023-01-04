@@ -1,0 +1,5 @@
+pipenv
+flask
+psycopg2
+sqlalchemy
+flask-cors
