@@ -1,5 +1,5 @@
 pipenv
 flask
-psycopg2
+psycopg2-binary
 sqlalchemy
 flask-cors
