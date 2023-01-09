@@ -1,0 +1,11 @@
+[Unit]
+Description=Gunicorn instance to serve myproject
+After=network.target
+
+[Service]
+WorkingDirectory=/app/backend
+Environment="PATH=/app/backend/backendvenv/bin"
+ExecStart=/app/backend/backendvenv/bin/gunicorn --workers 3 --bind unix:backend.sock -m 007 main:app
+
+[Install]
+WantedBy=multi-user.target
